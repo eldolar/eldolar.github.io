@@ -2,7 +2,8 @@ import React from "react"
 
 const Footer = () => (
   <footer>
-    © {new Date().getFullYear()}, Built with ❤️
+    © {new Date().getFullYear()}, Built with
+    <span role="img" aria-label="heart">❤️</span>
   </footer>
 )
 
