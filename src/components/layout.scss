@@ -1,6 +1,6 @@
+@import './../styles/variables';
 
 html,
-body,
 body,
 #___gatsby,
 #gatsby-focus-wrapper {
@@ -12,7 +12,7 @@ body {
   #gatsby-focus-wrapper > div.container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 60px auto 30px;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
       "header"
       "main"
@@ -24,14 +24,25 @@ body {
 
   header {
     grid-area: header;
+	  box-shadow: 0 8px 6px -6px black;
   }
 
   main {
     grid-area: main;
     justify-self: center;
+    margin: 0 5% 0 5%;
   }
 
   footer {
     grid-area: footer;
+  }
+
+  a {
+    @extend %a-gradient-color;
+  }
+
+  .navigation {
+    text-align: center;
+    padding-top: 25px;
   }
 }

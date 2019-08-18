@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
     <h1>
       <Link to="/" >
         <span role="img" aria-label="exchange">💱</span>
-        {siteTitle}
+        {` `}{siteTitle}
       </Link>
     </h1>
   </header>

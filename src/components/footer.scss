@@ -1,0 +1,14 @@
+@import './../styles/variables';
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  span {
+    @extend %default-gradient-color;
+  }
+
+  a {
+    margin-top: -3px;
+  }
+}

@@ -1,0 +1,23 @@
+%default-gradient-color {
+  background: linear-gradient(90deg,#53265e, #171717, rgb(17, 9, 27));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+%a-gradient-color {
+  background: linear-gradient(90deg,#e58efd, #53265e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &:hover {
+    background: linear-gradient(90deg,#53265e, #e58efd, #e58efd);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+%a-reset-gradient-color {
+  background: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
